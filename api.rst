@@ -140,7 +140,7 @@ mode
   +---------------+------------------+
   
 sfinfo
-  A pointer to an ``SNDFILE_INFO`` structure.
+  A pointer to an SNDFILE_INFO_ structure.
 
 Every call to ``sf_open`` should be matched with a call to sf_close_ to free up memory allocated during the call to ``sf_open``.
 
