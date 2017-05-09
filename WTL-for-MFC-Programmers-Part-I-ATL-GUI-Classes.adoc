@@ -1,2 +1,21 @@
 WTL for MFC Programmers, Part I - ATL GUI Classes
--------------------------------------------------
+=================================================
+Michael Dunn
+2005-12-05
+
+An introduction to WTL programming for MFC developers.
+
+README.TXT
+----------
+
+This is the stuff I want you to read first, before proceeding on or posting messages to this article's discussion board.
+
+This series of articles originally covered WTL 7.0 and written for VC 6 users. Now that VC 8 is out, I felt it was about time to update the articles to cover VC 7.1. ;) (Also, the automatic 6-to-7 conversion done by VC 7.1 doesn't always go smoothly so VC 7.1 users could get stuck when trying to use the demo source code.) So as I go through and update this series, the articles will be updated to reflect new WTL 7.1 features, and I'll have VC 7.1 projects in the source downloads.
+
+.Important note for VC 2005 users
+NOTE: The Express edition of VC 2005 does **not** come with ATL (or MFC for that matter) so you can't build ATL or WTL projects with the Express version.
+
+If you are using VC 6, then you need the Platform SDK. You can't use WTL without it. You can use the link:http://www.microsoft.com/downloads/details.aspx?FamilyId=A55B6B43-E24F-4EA3-A93E-40C0EC4F68E5&displaylang=en[web install version], or download the link:http://www.microsoft.com/downloads/details.aspx?familyid=EBA0128F-A770-45F1-86F3-7AB010B398A3&displaylang=en[CAB files] or an link:http://www.microsoft.com/downloads/info.aspx?na=45&p=1&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=EBA0128F-A770-45F1-86F3-7AB010B398A3&u=details.aspx%3ffamilyid%3dD8EECD75-1FC4-49E5-BC66-9DA2B03D9B92%26displaylang%3den[ISO image] and run the setup locally. Be sure you use the utility to add the SDK include and lib directories to the VC search path. You can find this in the *Visual Studio Registration folder* in the Platform SDK program group. It's a good idea to get the latest Platform SDK even if you're using VC 7 so you have the latest headers and libs.
+
+You need WTL. link:http://www.microsoft.com/downloads/details.aspx?FamilyId=1BE1EB52-AA96-4685-99A5-4256737781C5&displaylang=en[Download version 7.1] from Microsoft. See the articles link:https://www.codeproject.com/wtl/wtlintro1.asp["Introduction to WTL - Part 1"] and link:https://www.codeproject.com/wtl/wtlinst.asp["Easy installation of WTL"] for some tips on installing the files. Those articles are rather out-of-date now, but still contain some good info. The WTL distribution also has a readme file with installation instructions. One thing which I don't think is mentioned in those articles is how to add the WTL files to the VC include path. In VC 6, click *Tools|Options* and go to the Directories tab. In the Show directories for combo box, select Include files. Then add a new entry that points to the directory where you put the WTL header files. In VC 7, click Tools|Options, click Projects then VC++ Directories. In the Show directories for combo box, select Include files. Then add a new entry that points to the directory where you put the WTL header files.
+
